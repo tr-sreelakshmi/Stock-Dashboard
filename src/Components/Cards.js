@@ -6,7 +6,7 @@ const Cards = ({ children }) => {
 
   return (
     <div
-      className={`w-full h-full  relative p-8 border-2   ${
+      className={`w-full h-full  relative p-8 border-2 mt-5  ${
         darkMode ? "bg-gray-900 border-gray-800" : "bg-white border-neutral-200"
       }`}
     >

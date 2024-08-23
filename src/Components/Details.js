@@ -21,7 +21,7 @@ const Details = ({ details }) => {
   return (
     <Cards>
       <ul
-        className={`w-full h-full flex flex-col justify-between divide-y-1 ${
+        className={`w-full h-full flex flex-col justify-between divide-y-1 overflow-y-auto ${
           darkMode ? "divide-gray-800" : null
         }`}
       >
@@ -29,7 +29,7 @@ const Details = ({ details }) => {
           return (
             <li key={item} className="flex-1 flex justify-between items-center">
               <span>{detailsList[item]}</span>
-              <span>
+              <span className="text-sm xl:text-md 2xl:text-md flex">
                 {item === "marketCapitalization"
                   ? ` ${convertMilliontoBillion(details[item])}B`
                   : details[item]}
